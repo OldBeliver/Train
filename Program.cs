@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace Train
 {
@@ -11,8 +6,6 @@ namespace Train
     {
         static void Main(string[] args)
         {
-            
-
             RailwayDepot depot = new RailwayDepot();
 
             depot.Work();
@@ -60,6 +53,7 @@ namespace Train
 
             CalculateWagonsCount(_tickets);
             _trainStatus = "отправлен";
+
             ShowTrainStatus();
         }
 
@@ -119,5 +113,4 @@ namespace Train
             _wagonsCount = (tickets / wagonSeats == 0) ? tickets / wagonSeats : tickets / wagonSeats + 1;
         }
     }
-
 }
