@@ -242,7 +242,6 @@ namespace Train
             Console.WriteLine($"{separator}");
 
             Utils.PressEnter();
-
         }
     }
 
