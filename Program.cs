@@ -60,8 +60,8 @@ namespace Train
 
                 Train train = _creator.CreateNewTrain();
 
-                Animation animation = new Animation();
-                animation.Go();
+                Cartoon animation = new Cartoon();
+                animation.AnimationTrain();
 
                 _trains.Add(train);
             }
@@ -246,11 +246,9 @@ namespace Train
         }
     }
 
-    class Animation
+    class Cartoon
     {
-        
-
-        public void Go()
+        public void AnimationTrain()
         {
             Console.CursorVisible = false;
 
